@@ -36,7 +36,9 @@ BotoesCategorias.forEach(botao => {
 
 // Eventor Mouseover e Mouseout
 jogos.forEach(jogo => {
+
     let NomeJogo = jogo.querySelector("img").alt.toUpperCase();
+
     jogo.addEventListener("mouseover", () => {
         NomeAtual.innerHTML = NomeJogo;
         quadrado.style.display = "flex"
@@ -60,6 +62,7 @@ let clique_botao = document.querySelector(".q-botao button");
 let Back_Categorias = document.querySelector("nav.categorias");
 
 let imagem = document.querySelector(".q-botao button img");
+//icones botao tema
 let imgSol = botao.getAttribute("data-img-sol");
 let imgLua = botao.getAttribute("data-img-lua");
 
