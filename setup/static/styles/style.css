@@ -95,6 +95,7 @@ nav.categorias button {
 nav.categorias button:hover {
     background-color: #3D3557;
     border-radius: 5px;
+    transform: scale(1.01);
 }
 
 .grade-jogos {
