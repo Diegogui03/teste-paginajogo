@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2C2F48;
+    overflow-y: scroll; /* Sempre mostra a barra de rolagem vertical */
+}
+
+.background-principal {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.q-nome {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center;     /* Centraliza verticalmente */
+    height: 80px;            /* Ajusta a altura conforme necessário */
+    padding-top: 25px;
+    position: fixed;         /* Mantém o contêiner fixo no topo */
+    top: 0;                  /* Posiciona no topo da página */
+    width: 38%;             /* Faz com que ocupe toda a largura da tela */
+    margin-left: 1500px;    /* Move o contêiner 50% para a direita */
+    transform: translateX(-50%); /* Centraliza o contêiner */
+    background-color: rgba(56, 59, 91, 0.8); /* Cor de fundo do contêiner */
+    z-index: 1000;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.12);
+}
+
+p {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 24px; /* Remove margens para evitar deslocamentos indesejados */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+input::placeholder {
+    text-align: left;
+    color: white;
+    font-size: 27px;
+    opacity: 0.55;
+}
+
+.barra-pesquisa {
+    position: fixed;
+    top: 20px;
+    z-index: 1000;
+    width: 650px;
+    height: 55px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 22px;
+    background-color: rgba(61, 53, 87, 0.9);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: left;
+    left: 250px;
+}
+.barra-pesquisa:hover {
+    background-color: rgb(61, 53, 87);
+}
+
+nav.categorias {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #383B5B;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+nav.categorias button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 27px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav.categorias button:hover {
+    background-color: #3D3557;
+    border-radius: 5px;
+}
+
+.grade-jogos {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(150px, auto);
+    padding-bottom: 40px;
+}
+
+.jogo {
+    background-color: #383B5B;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    aspect-ratio: 1 / 1; 
+    min-width: 222px;
+    min-height: 222px; 
+}
+
+.jogo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: fill;
+}
+
+.jogo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.q-botao{
+    margin-left: 85%;
+    margin-top: 9px;
+    position: absolute;
+    display: flex;
+    background-color: white;
+    height: 42px;
+    width: 80px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.q-botao button{
+    
+    display: flex; /* Adicionado */
+    justify-content: center; /* Adicionado */
+    align-items: center; /* Adicionado */
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50%;
+    border: none;
+    background-color: rgb(205, 205, 205);
+    transition: margin-left 0.2s ease;
+}
+
+.q-botao button img{
+    height: 60%;
+    width: 60%;
+    opacity: 0.8;
+}
+
+.q-botao button:hover{
+    background-color:  rgb(200, 196, 196);
+}
+

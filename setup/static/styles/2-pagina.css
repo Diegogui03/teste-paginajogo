@@ -1,0 +1,55 @@
+body {
+    background-color: #361b66;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+.tela-jogo {
+    width: 60%;
+    height: 100%;
+    background-color: rgb(27, 26, 26);
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    position: absolute;
+    top: 0; /* Garante que o header fique no topo */
+    left: 0; /* Garante que o header fique à esquerda */
+    align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+.b-retorno {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start; /* Alinha o botão à esquerda */
+}
+
+.b-retorno button {
+    width: 174px;
+    height: 70px;
+    background-color: #37BB58;
+    filter: drop-shadow(2px 8px 6px rgba(0, 0, 0, 0.25));
+    border-bottom-right-radius: 20px;
+    border: none;
+
+    cursor: pointer;
+    
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.b-retorno button:hover{
+    background-color: #1e6e32;
+    transition-duration: 100ms;
+    transform: scale(1.05);
+}
+

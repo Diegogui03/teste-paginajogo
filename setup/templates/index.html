@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+<body>
+    <div class="background-principal">
+        <header>
+            <input id="pesquisa" type="text" placeholder="Buscar jogos" class="barra-pesquisa">
+            <div class="q-nome">
+                <p></p>
+            </div>    
+            <div class="q-botao" data-img-sol="{% static 'icones/sol.png' %}" data-img-lua="{% static 'icones/lua.png' %}">
+                <button>
+                    <img src="{% static 'icones/sol.png' %}">
+                </button>
+            </div>
+        </header>
+        
+        <!-- data-categoriaS -->
+        <nav class="categorias">
+            <button>Todos</button>
+            <button>Ação</button>
+            <button>Arcade</button>
+            <button>Aventura</button>
+            <button>Casual</button>
+            <button>Corrida</button>
+            <button>Estrategia</button>
+            <button>2 Players</button>
+        </nav>
+        
+        <!-- JOGOS -->
+        <div class="grade-jogos">
+            <a class="jogo" data-categoria="Casual" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/pou.jfif' %}" alt="pou">
+            </a>
+            <a class="jogo" data-categoria="Aventura, Estrategia" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/Clash.jfif' %}" alt="clash of clans">
+            </a>
+            <a class="jogo" data-categoria="Estrategia" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/yugi.jfif' %}" alt="yu gi oh">
+            </a>
+            <a class="jogo" data-categoria="Ação" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/zodiaco.jfif' %}" alt="cavaleiros do zodiaco">
+            </a>
+            <a class="jogo" data-categoria="Arcade" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/angryb.jfif' %}" alt="angry birds">
+            </a>
+            <a class="jogo" data-categoria="Corrida" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/temple.jfif' %}" alt="temple run">
+            </a>
+            <a class="jogo" data-categoria="Arcade, 2 Players" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/FireWater.jfif' %}" alt="fire water">
+            </a>
+            <a class="jogo" data-categoria="Arcade, 2 Players" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/icecream.jfif' %}" alt="bad ice cream">
+            </a>
+            <a class="jogo" data-categoria="Aventura, Arcade" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/redball.jfif' %}" alt="red ball">
+            </a>
+            <a class="jogo" data-categoria="Aventura" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/garfield.jfif' %}" alt="garfield">
+            </a>
+            <a class="jogo" data-categoria="Ação, Aventura " href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/raftwars.jfif' %}" alt="raft wars">
+            </a>
+            <a class="jogo" data-categoria="Casual" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/club.jfif' %}" alt="club penguin">
+            </a>
+            <a class="jogo" data-categoria="Casual" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/clash royale.png' %}" alt="clash royale">
+            </a>
+            <a class="jogo" data-categoria="Casual" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/pokemongo.png' %}" alt="pokemon go">
+            </a>
+            <a class="jogo" data-categoria="Casual" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/pou.jfif' %}" alt="pou">
+            </a>
+            <a class="jogo" data-categoria="Aventura, Estrategia" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/Clash.jfif' %}" alt="clash of clans">
+            </a>
+            <a class="jogo" data-categoria="Estrategia" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/yugi.jfif' %}" alt="yu gi oh">
+            </a>
+            <a class="jogo" data-categoria="Ação" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/zodiaco.jfif' %}" alt="cavaleiros do zodiaco">
+            </a>
+            <a class="jogo" data-categoria="Arcade" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/angryb.jfif' %}" alt="angry birds">
+            </a>
+            <a class="jogo" data-categoria="Corrida" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/temple.jfif' %}" alt="temple run">
+            </a>
+            <a class="jogo" data-categoria="Arcade, 2 Players" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/FireWater.jfif' %}" alt="fire water">
+            </a>
+            <a class="jogo" data-categoria="Arcade, 2 Players" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/icecream.jfif' %}" alt="bad ice cream">
+            </a>
+            <a class="jogo" data-categoria="Aventura, Arcade" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/redball.jfif' %}" alt="red ball">
+            </a>
+            <a class="jogo" data-categoria="Aventura" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/garfield.jfif' %}" alt="garfield">
+            </a>
+            <a class="jogo" data-categoria="Ação, Aventura " href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/raftwars.jfif' %}" alt="raft wars">
+            </a>
+            <a class="jogo" data-categoria="Casual" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/club.jfif' %}" alt="club penguin">
+            </a>
+            <a class="jogo" data-categoria="Casual" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/clash royale.png' %}" alt="clash royale">
+            </a>
+            <a class="jogo" data-categoria="Casual" href="{% url '2pagina' %}" target="_self">
+                <img src="{% static 'imagens/pokemongo.png' %}" alt="pokemon go">
+            </a>
+        </div>
+        
+        </div>
+    </div>
+    <script src="{% static 'scripts/script.js' %}"></script>
+</body>
+</html>
+
+
