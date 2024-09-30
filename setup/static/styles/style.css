@@ -89,13 +89,13 @@ nav.categorias button {
     font-size: 27px;
     cursor: pointer;
     padding: 10px 20px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.15s;
 }
 
 nav.categorias button:hover {
     background-color: #3D3557;
     border-radius: 5px;
-    transform: scale(1.01);
+    transform: scale(1.04);
 }
 
 .grade-jogos {
