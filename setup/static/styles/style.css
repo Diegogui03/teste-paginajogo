@@ -13,6 +13,7 @@ body {
 .background-principal {
     width: 90%;
     margin: 0 auto;
+    color: rgb(203, 202, 202);
 }
 
 .q-nome {
@@ -96,14 +97,15 @@ nav.categorias button {
 }
 
 nav.categorias button:hover {
-    background-color: #3D3557;
     border-radius: 5px;
-    transform: scale(1.04);
+    transform: scale(1.2);
+    color: rgb(78, 204, 204);
 }
 
 .grade-jogos {
     margin-top: 40px;
     display: grid;
+    position: relative;
     grid-template-columns: repeat(7, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(150px, auto);
@@ -157,7 +159,7 @@ nav.categorias button:hover {
     width: 50%;
     border: none;
     background-color: rgb(205, 205, 205);
-    transition: margin-left 0.2s ease;
+    transition: margin-left 0.35s ease;
 }
 
 .q-botao button img{
@@ -167,6 +169,6 @@ nav.categorias button:hover {
 }
 
 .q-botao button:hover{
-    background-color:  rgb(200, 196, 196);
+    background-color:  rgb(134, 203, 205);
 }
 

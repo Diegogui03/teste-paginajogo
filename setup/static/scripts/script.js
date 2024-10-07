@@ -31,6 +31,9 @@ BotoesCategorias.forEach(botao => {
     botao.addEventListener("click", () => {
         CategoriaSelecionada = botao.textContent.trim(); // Atualiza a categoria selecionada
         filtrarJogos();
+        BotoesCategorias.forEach(b => {b.style.color = "";})
+        
+        botao.style.color = "#01DC22";
     });
 });
 
@@ -66,6 +69,7 @@ let imagem = document.querySelector(".q-botao button img");
 let imgSol = botao.getAttribute("data-img-sol");
 let imgLua = botao.getAttribute("data-img-lua");
 
+
 // Botao tema
 botao.addEventListener("click", () => {
     if (clique_botao.style.marginLeft == "50%") {
@@ -74,7 +78,6 @@ botao.addEventListener("click", () => {
         tema_branco = false;
         tema(tema_branco);
 
-
     } else {
         clique_botao.style.marginLeft = "50%";
         tema_branco = true;
@@ -82,42 +85,28 @@ botao.addEventListener("click", () => {
 
     }
 });
-
 function tema(tema_branco){
-    
-    if (tema_branco == true) {
-        background.style.backgroundColor = "#D1D1D1";
-        botao.style.backgroundColor = "gray";
-        imagem.src = imgLua;
+    if (tema_branco == true){
+        background.style.backgroundColor = "rgb(237, 235, 235)";
 
-        cor_texto = "black";
-        cor_categoria = "#9E9E9E";
-        jogo_cor = "#9E9E9E";
+        botao.style.backgroundColor = "gray";
+        imagem.src = imgSol;
+
+        jogos.forEach(jogo => { jogo.style.backgroundColor = "gray"; });
+        Back_Categorias.style.backgroundColor = "gray";
+        BarraPesquisa.style.backgroundColor = "gray";
+        quadrado.style.backgroundColor = "rgba(20, 20, 20, 0.8)";
+        
+        
     }
     else{
-        background.style.backgroundColor = "#2C2F48";
-        botao.style.backgroundColor = "white";
-        imagem.src = imgSol;
-        
-        cor_texto = "white";
-        jogo_cor = "#383B5B";
-        cor_categoria = "#383B5B";
+        background.style.backgroundColor = "";
+        botao.style.backgroundColor = "";
+        imagem.src = imgLua;
+        jogos.forEach(jogo => { jogo.style.backgroundColor = ""; });
+        Back_Categorias.style.backgroundColor = "";
+        BarraPesquisa.style.backgroundColor = "";
+        quadrado.style.backgroundColor = ""
     }
-
-    mudar_cor(jogo_cor, cor_categoria, cor_texto);
 }
-
-function mudar_cor(cor_jogos, cor_categoria, cor_texto){
-    jogos.forEach(jogo => {
-        jogo.style.backgroundColor = cor_jogos;
-    });
-    BotoesCategorias.forEach(botao => {
-        botao.style.color = cor_texto;
-    });
-
-    Back_Categorias.style.backgroundColor = cor_categoria;
-    console.log("Cor da categoria:", cor_categoria);
-
-}
-
 
