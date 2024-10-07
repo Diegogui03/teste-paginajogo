@@ -172,3 +172,71 @@ nav.categorias button:hover {
     background-color:  rgb(134, 203, 205);
 }
 
+@media (max-width: 700px){
+
+    .grade-jogos{
+        position: relative;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .jogo {
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 5%;
+        min-height: 5%; 
+    }
+
+    .barra-pesquisa{
+        display: flex;
+        position: absolute;
+        left: 5%;
+        width: 55%;
+
+    }
+    
+    input::placeholder {
+        text-align: left;
+        color: white;
+        font-size: 27px;
+        opacity: 0.55;
+        
+    }
+    .background-principal{
+        width: 100vw;
+    }
+
+    nav.categorias{
+        width: 100%;
+        border-radius: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+    }
+    nav.categorias button{
+        justify-content: center;
+        display: flex;
+        position: relative;
+        width: auto;
+        font-size: 25px;
+        padding: 15px 20px;
+    }
+
+    @media (hover: none){
+        nav.categorias button:hover {
+            border-radius: initial;
+            transform: initial;
+            color: inherit;
+        }
+    }
+
+    .q-botao{
+        right: 5%;
+        width: 85px;
+        height: 47px;
+    }
+
+}
